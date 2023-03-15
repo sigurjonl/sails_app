@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Timeline.js Example</title>
+    <!-- Include Timeline.js styles -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  </head>
+  <body>
+    <!-- Define the timeline container -->
+    <div id="timeline-container"></div>
+
+    <!-- Include Timeline.js library -->
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+
+    <script>
+      // Define the timeline data
+      var timelineData = {
+        "headline": "Popular Bands and Songs in the USA, 1976 - 2015",
+        "type": "default",
+        "text": "This timeline showcases some of the most popular bands and songs in the USA from 1976 to 2015.",
+        "date": [
+          {
+            "startDate": "1976",
+            "endDate": "1980",
+            "headline": "The Eagles",
+            "text": "Their hit song 'Hotel California' became an instant classic and remains popular to this day."
+          },
+          {
+            "startDate": "1981",
+            "endDate": "1985",
+            "headline": "Michael Jackson",
+            "text": "His album 'Thriller' was a massive success, with hits like 'Beat It' and 'Billie Jean'."
+          },
+          {
+            "startDate": "1986",
+            "endDate": "1990",
+            "headline": "Guns N' Roses",
+            "text": "Their debut album 'Appetite for Destruction' was a huge success, with hits like 'Sweet Child o' Mine' and 'Welcome to the Jungle'."
+          },
+          {
+            "startDate": "1991",
+            "endDate": "1995",
+            "headline": "Nirvana",
+            "text": "Their album 'Nevermind' helped popularize grunge music, with hits like 'Smells Like Teen Spirit' and 'Come As You Are'."
+          },
+          {
+            "startDate": "1996",
+            "endDate": "2000",
+            "headline": "Backstreet Boys",
+            "text": "Their album 'Millennium' was a huge success, with hits like 'I Want It That Way' and 'Larger Than Life'."
+          },
+          {
+            "startDate": "2001",
+            "endDate": "2005",
+            "headline": "Eminem",
+            "text": "His album 'The Eminem Show' was a massive success, with hits like 'Without Me' and 'Lose Yourself'."
+          },
+          {
+            "startDate": "2006",
+            "endDate": "2010",
+            "headline": "Beyoncé",
+            "text": "Her album 'B'Day' was a commercial success, with hits like 'Irreplaceable' and 'Beautiful Liar'."
+          },
+          {
+            "startDate": "2011",
+            "endDate": "2015",
+            "headline": "Taylor Swift",
+            "text": "Her album '1989' was a critical and commercial success, with hits like 'Shake It Off' and 'Blank Space'."
+          }
+        ]
+      };
+
+      // Create a Timeline object with the timeline data
+      var timeline = new TL.Timeline('timeline-container', timelineData);
+    </script>
+  </body>
+</html>
