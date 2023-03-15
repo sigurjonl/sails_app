@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "sails-mysql": "^0.12.2"
+    "sails-mysql": "^3.0.1",
+    "timelinejs": "^2.35.6"
   }
 }
